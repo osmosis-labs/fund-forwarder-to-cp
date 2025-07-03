@@ -1,0 +1,21 @@
+[package]
+name = "fund-forwarder"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+edition2024 = []
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cosmwasm-std = { version = "2.0", features = ["staking", "cosmwasm_1_3"] }
+cosmwasm-schema = "1.5.0"
+cw-storage-plus = "2.0"
+schemars = "0.8.12"
+serde = { version = "1.0.188", default-features = false, features = ["derive"] }
+thiserror = "1.0.48"
+
+[dev-dependencies]
+cosmwasm-vm = "1.5.0"

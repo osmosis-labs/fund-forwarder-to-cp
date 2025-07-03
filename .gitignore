@@ -1,0 +1,20 @@
+# CosmWasm defaults
+/target/
+/artifacts/
+/schema/
+
+# Rust defaults
+Cargo.lock
+.cargo/
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
